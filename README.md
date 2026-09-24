@@ -15,6 +15,26 @@ answers using your own Claude plan — no API key, no extra cost.
 - **Remembers** — a simple markdown notes vault it reads and writes itself
 - **Four faces** — Circuit Board, Radial, Face in the Code, Neural Core
 
+## Capabilities
+
+Built-in tools the assistant can call on:
+
+- `look_at_screen` / `read_screen_text` — see the screen, or read the words on it with their positions
+- `look_through_camera` — take and look at a webcam picture
+- `click_text` / `click_at` — click a button or link by its on-screen label, or by exact coordinates
+- `type_text` — paste text into whatever has focus
+- `press_keys` — send key combinations (e.g. `ctrl+s`, `alt+tab`)
+- `scroll` — scroll the window under the mouse
+- `open_app` / `open_url` — launch a program or open a web address
+- `list_windows` / `focus_window` — see what's open and bring a window to the front
+
+Learned skills (taught in conversation, stored in its notes vault):
+
+- **Multi search** — given a term, searches it across multiple engines (Google,
+  DuckDuckGo, Bing, Yahoo, Reddit), takes the top results from each, and
+  compiles them into a short summary — naming the standout source when
+  there is one.
+
 ## Getting started
 
 1. Clone or download this repo.
