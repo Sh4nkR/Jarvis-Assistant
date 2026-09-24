@@ -35,6 +35,11 @@ Learned skills (taught in conversation, stored in its notes vault):
   compiles them into a short summary — naming the standout source when
   there is one.
 
+## Requirements
+
+- Windows 10 or 11, 64-bit
+- A Claude plan (Pro, Max, Team, or Enterprise) to sign in with
+
 ## Getting started
 
 1. Clone or download this repo.
