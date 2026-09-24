@@ -1,0 +1,12 @@
+{
+  "name": "JARVIS",
+  "call_me": "Dr Wolf",
+  "port": 8795,
+  "face": "board",
+  "voice": "en-GB-RyanNeural",
+  "voice_rate": "+0%",
+  "stt_model": "small.en",
+  "model": "claude-sonnet-5",
+  "hands_on_at_start": true,
+  "open_window": true
+}

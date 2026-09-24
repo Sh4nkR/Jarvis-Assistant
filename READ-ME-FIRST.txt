@@ -1,0 +1,68 @@
+JARVIS ASSISTANT
+================
+
+TO START
+  Click  Start-Jarvis-Assistant.bat  once. Jarvis's window opens by itself.
+
+  A black window also opens. That's Jarvis's engine. Leave it open; closing it
+  switches Jarvis off. If you close only Jarvis's window, clicking the .bat again
+  just reopens it.
+
+THE FIRST START IS DIFFERENT (one time only)
+  1. It downloads Jarvis's parts, about 1 GB in total. That takes a few minutes.
+  2. A Claude page opens in your browser. Sign in and click Authorize.
+     This connects Jarvis's brain (Claude Code) to your Claude plan. There is
+     no API key and no extra cost. Jarvis never sees your password.
+  3. The first time you press TALK or CAMERA, the window asks to use the
+     microphone or camera. Click Allow.
+  4. The chip at the top says EARS LOADING for the first minute or two while
+     the speech model downloads. You can type to Jarvis in the meantime.
+
+THE BUTTONS
+  TALK      Click, speak, click again (it says SEND IT) and Jarvis answers aloud.
+            Keyboard: F2 does the same.
+  Type box  Type and press Enter, or click SEND.
+  CAMERA    Turns the webcam on or off. While it's on, Jarvis sees what the
+            camera sees with every question. Jarvis can also take a picture
+            by itself when you ask, "what am I holding?"
+  SCREEN    Jarvis looks at your screen. Type a question first, or just click.
+  SEARCH    Searches the web for what's in the box.
+  MEMORY    What Jarvis has saved about you. Click a note to read it.
+  HANDS     ON = Jarvis may use your mouse and keyboard. OFF = look, don't touch.
+  VOICE     Spoken replies on or off.
+  LOG       The whole conversation. There's a button at the bottom to start fresh.
+  FACE      Switches between Jarvis four faces: Circuit Board, Radial,
+            Face in the Code and Neural Core.
+  STOP      Stops Jarvis at once, mid-sentence or mid-task. Keyboard: Esc.
+
+  The four chips at the top say whether BRAIN, EARS, VOICE and HANDS are ready.
+
+EMERGENCY STOP FOR THE HANDS
+  Push the mouse into any corner of the screen. That halts any mouse or keyboard
+  action Jarvis is doing.
+
+WHEN JARVIS ASKS PERMISSION
+  Before Jarvis runs a command that changes something on your PC, or edits a file
+  outside its memory, a box appears with ALLOW and DENY. Nothing happens until
+  you click one. (Look-only commands, clicks, typing and opening apps don't ask;
+  the HANDS button controls the mouse and keyboard.)
+
+WHERE THINGS ARE
+  memory\          Jarvis's memory (the vault). CLAUDE.md is its identity and
+                   rules. Open any note in Notepad and edit it yourself.
+  app\jarvis.json  Settings: name, voice, what it calls you.
+  logs\jarvis.log  What happened, if something goes wrong.
+
+IF SOMETHING'S WRONG
+  - BRAIN says SIGN IN: click the SIGN IN button in the window.
+  - EARS says ERROR: the speech model couldn't download. Check the internet
+    and start Jarvis again. Typing still works.
+  - VOICE says BACKUP: Microsoft's voice service couldn't be reached, so the
+    window's built-in voice is speaking. It switches back by itself.
+
+CREDITS
+  Face:     ai-visualizer by Jared Rhodenizer (github.com/jaredrhod/ai-visualizer),
+            AGPL-3.0, used unchanged in app\face. Licence in LICENSES\.
+  Memory:   layout adapted from ai-memory-vault by Jared Rhodenizer, CC BY-SA 4.0.
+  Brain:    Claude Code through the Claude Agent SDK (Anthropic).
+  Ears:     faster-whisper (MIT).  Voice: edge-tts (Microsoft neural voices).

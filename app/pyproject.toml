@@ -1,0 +1,19 @@
+[project]
+name = "jarvis-assistant"
+version = "1.0.0"
+description = "Jarvis for Dr Wolf: Claude Code brain, jaredrhod face, local ears, hands on the PC."
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "claude-agent-sdk>=0.2.100",   # the brain: Claude Code on your Claude plan (bundles the CLI)
+    "aiohttp>=3.9",                # one local web server for the window and the live link
+    "faster-whisper>=1.0.0",       # ears: local speech-to-text, same engine backtalk uses
+    "edge-tts>=6.1",               # mouth: natural British voice, free
+    "mss>=9.0",                    # eyes: fast screenshots
+    "pillow>=10.0",
+    "pyautogui>=0.9.54",           # hands: mouse and keyboard
+    "pyperclip>=1.8",              # hands: paste long or non-English text reliably
+    "numpy>=1.26",
+]
+
+[tool.uv]
+package = false
